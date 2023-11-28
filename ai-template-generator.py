@@ -1,6 +1,9 @@
 import requests
 import argparse
 import os
+import urllib3
+
+urllib3.disable_warnings()
 
 ai_proxy = "http://127.0.0.1:3000/endpoint"
 
