@@ -26,7 +26,7 @@ if __name__ == "__main__":
             'systemContent': [template_systemcontent]
             }
         print("Proccessing your request...")
-        template_ai = requests.post(ai_proxy, headers={'Content-Type': 'application/json'}, json=prompt, verify=False)
+        template_ai = requests.post(args.proxy, headers={'Content-Type': 'application/json'}, json=prompt, verify=False)
         template_filename = f'email-templates/{template_filename}.html'
 
         # Check if the file already exists
