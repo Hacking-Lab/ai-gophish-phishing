@@ -93,8 +93,6 @@ for campaign_index in range(campaign_count):
 
     campaigns.append(campaign_data)
 
-print("All campaigns data:", campaigns)
-
 # Loop through campaigns and create necessary entities
 for campaign in campaigns:
     print(campaign)
